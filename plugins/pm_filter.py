@@ -859,7 +859,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-          a = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+          a = await message.reply_photo(photo="https://te.legra.ph/file/f8a066f176362079d4433.jpg", caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
           await asyncio.sleep(300)
           await message.delete()
