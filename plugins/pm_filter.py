@@ -1,6 +1,7 @@
 # Kanged From @TroJanZheX
 import asyncio
 import re
+import random
 import ast
 import math
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
@@ -9,7 +10,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
+    SINGLE_BUTTON, PICS, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -849,7 +850,7 @@ async def auto_filter(client, msg, spoll=False):
             release_date=imdb['release_date'],
             year=imdb['year'],
             genres=imdb['genres'],
-            poster="https://te.legra.ph/file/f8a066f176362079d4433.jpg",
+            poster=random.choice(PICS),
             plot=imdb['plot'],
             rating=imdb['rating'],
             url=imdb['url'],
@@ -859,26 +860,23 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-          a = await message.reply_photo(photo="https://te.legra.ph/file/f8a066f176362079d4433.jpg", caption=cap[:1024],
+          a = await message.reply_photo(photo=random.choice(PICS), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
           await asyncio.sleep(300)
-          await message.delete()
           await a.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            kl = await message.reply_photo(photo="https://te.legra.ph/file/f8a066f176362079d4433.jpg", caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            kl = await message.reply_photo(photo=random.choice(PICS), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(60)
             await kl.delete()
-            await message.delete()
         except Exception as e:
             logger.exception(e)
-            kll = await message.reply_photo(photo="https://te.legra.ph/file/f8a066f176362079d4433.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            kll = await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(60)
             await kll.delete()
-            await message.delete()
     else:
-        klk = await message.reply_photo(photo="https://te.legra.ph/file/f8a066f176362079d4433.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        klk = await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(60)
         await klk.delete()
         await message.delete()
