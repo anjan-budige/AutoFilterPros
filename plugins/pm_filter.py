@@ -879,7 +879,6 @@ async def auto_filter(client, msg, spoll=False):
         klk = await message.reply_photo(photo=random.choice(PICS), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(60)
         await klk.delete()
-        await message.delete()
     if spoll:
         await msg.message.delete()
 
