@@ -23,10 +23,10 @@ PICS = 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/fil
 
 # Admins, Channels & Users
 ADMINS = "1121140181"
-CHANNELS = None
+CHANNELS = "-1001883208693"
 auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = "-1001539945987"
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -49,7 +49,7 @@ LONG_IMDB_DESCRIPTION = False
 SPELL_CHECK_REPLY = "True"
 MAX_LIST_ELM = None
 INDEX_REQ_CHANNEL = "-1001767960284"
-FILE_STORE_CHANNEL = "-1001767960284"
+FILE_STORE_CHANNEL = "-1001883208693"
 MELCOW_NEW_USERS = True
 PROTECT_CONTENT = False
 PUBLIC_FILE_STORE = True
