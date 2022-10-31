@@ -29,7 +29,7 @@ auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = "-1001539945987"
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = '-1001539945987'
+AUTH_CHANNEL = "-1001539945987"
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
@@ -38,10 +38,10 @@ DATABASE_NAME = "M4uVideo"
 COLLECTION_NAME = 'Telegram_files'
 
 # Others
-LOG_CHANNEL = '-1001767960284'
-SUPPORT_CHAT = 'ml_contact_bot'
+LOG_CHANNEL = "-1001767960284"
+SUPPORT_CHAT = "ml_contact_bot"
 P_TTI_SHOW_OFF = False
-IMDB = 'True'
+IMDB = True
 SINGLE_BUTTON = False
 CUSTOM_FILE_CAPTION = None
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
