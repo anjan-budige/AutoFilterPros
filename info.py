@@ -23,7 +23,7 @@ PICS = 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/fil
 
 # Admins, Channels & Users
 ADMINS = 1121140181
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in '-1001883208693'.split()]
+CHANNELS = '-1001883208693'.split()
 
 auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -49,8 +49,8 @@ IMDB_TEMPLATE = '<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={u
 LONG_IMDB_DESCRIPTION = False
 SPELL_CHECK_REPLY = True
 MAX_LIST_ELM = None
-INDEX_REQ_CHANNEL = '-1001767960284'
-FILE_STORE_CHANNEL = '-1001883208693'
+INDEX_REQ_CHANNEL = "-1001767960284"
+FILE_STORE_CHANNEL = "-1001883208693"
 MELCOW_NEW_USERS = True
 PROTECT_CONTENT = False
 PUBLIC_FILE_STORE = True
