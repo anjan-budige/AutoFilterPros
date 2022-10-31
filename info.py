@@ -34,7 +34,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://enrich:enrich@cluster0.mhghl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-DATABASE_NAME = "M4uVideo"
+DATABASE_NAME = "M4uVideo_bot"
 COLLECTION_NAME = 'Telegram_files'
 
 # Others
