@@ -12,7 +12,7 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = 'Media_search'
-API_ID = "15914139"
+API_ID = 15914139
 API_HASH = "f5c54e1dd806604552e211b3841c1ad4"
 BOT_TOKEN = "5635079039:AAFulnoUbDmBtTyHcMYwTbvTAQw5EsABE3Q"
 
@@ -23,7 +23,7 @@ PICS = 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/fil
 
 # Admins, Channels & Users
 ADMINS = 1121140181
-CHANNELS = '-1001883208693'.split()
+CHANNELS = "-1001883208693".split()
 
 auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
