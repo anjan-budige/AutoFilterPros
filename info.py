@@ -24,12 +24,12 @@ PICS = 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/fil
 
 # Admins, Channels & Users
 ADMINS = "1121140181"
-CHANNELS = "-1001883208693"
+CHANNELS = '-1001883208693'
 auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = "-1001539945987"
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = "-1001539945987"
+AUTH_CHANNEL = '-1001539945987'
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
@@ -38,19 +38,19 @@ DATABASE_NAME = "M4uVideo"
 COLLECTION_NAME = 'Telegram_files'
 
 # Others
-LOG_CHANNEL = "-1001767960284"
+LOG_CHANNEL = '-1001767960284'
 SUPPORT_CHAT = 'ml_contact_bot'
 P_TTI_SHOW_OFF = False
-IMDB = "True"
+IMDB = 'True'
 SINGLE_BUTTON = False
 CUSTOM_FILE_CAPTION = None
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10"
+IMDB_TEMPLATE = '<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10'
 LONG_IMDB_DESCRIPTION = False
 SPELL_CHECK_REPLY = True
 MAX_LIST_ELM = None
-INDEX_REQ_CHANNEL = "-1001767960284"
-FILE_STORE_CHANNEL = "-1001883208693"
+INDEX_REQ_CHANNEL = '-1001767960284'
+FILE_STORE_CHANNEL = '-1001883208693'
 MELCOW_NEW_USERS = True
 PROTECT_CONTENT = False
 PUBLIC_FILE_STORE = True
@@ -65,5 +65,5 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-SHORTENER_API = "8b088f1bec72e5db45502b832a1116b99e11e876"
+SHORTENER_API = '8b088f1bec72e5db45502b832a1116b99e11e876'
 LONG_DROPLINK_URL = False
