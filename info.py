@@ -46,7 +46,7 @@ CUSTOM_FILE_CAPTION = None
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10"
 LONG_IMDB_DESCRIPTION = False
-SPELL_CHECK_REPLY = "True"
+SPELL_CHECK_REPLY = False
 MAX_LIST_ELM = None
 INDEX_REQ_CHANNEL = "-1001767960284"
 FILE_STORE_CHANNEL = "-1001883208693"
