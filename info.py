@@ -23,7 +23,7 @@ PICS = 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/fil
 
 # Admins, Channels & Users
 ADMINS = 1121140181
-CHANNELS = "-1001883208693 -1001682234983".split()
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001883208693').split()]
 
 auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
