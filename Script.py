@@ -5,7 +5,7 @@ class script(object):
 𝙸'𝙼  <a href=https://t.me/{}>{}</a>,   𝙽𝙾𝚃 𝚃𝙷𝙰𝚃 𝚈𝙾𝚄𝚃𝚄𝙱𝙴𝚁!,   
 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂 & 𝚆𝙴𝙱 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 (𝙵𝚁𝙴𝙴 𝙾𝙵𝙲𝙾𝚄𝚁𝚂𝙴) 🤗🤗🤗\n
 
-\n𝙹𝚞𝚜𝚝 𝙴𝚗𝚝𝚎𝚛 𝚃𝚑𝚎 𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎 𝚆𝚊𝚒𝚝 𝙵𝚎𝚠 𝚂𝚎𝚌𝚘𝚗𝚍𝚜 𝙸 𝚆𝚒𝚕𝚕 𝙶𝚒𝚟𝚎 𝚃𝚑𝚎 𝙼𝚘𝚟𝚒𝚎 😊\n\n👇ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʙᴇʟᴏᴡ👇"""
+\n 𝙹𝚞𝚜𝚝 𝙴𝚗𝚝𝚎𝚛 𝚃𝚑𝚎 𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎 𝚆𝚊𝚒𝚝  𝚘𝚛  𝚜𝚎𝚌 𝚒𝚝 𝚠𝚒𝚕𝚕 𝚐𝚒𝚟𝚎 𝚝𝚑𝚎 𝙼𝚘𝚟𝚒𝚎😊\n\n👇CHECK OUT ABOVE LINK👇"""
 
     HELP_TXT = """𝙷𝙴𝚈 {}
 
@@ -18,17 +18,17 @@ class script(object):
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙰𝙳𝚂
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Filter Bot is a open source project. 
-- Source - https://github.com/anjan-budige/AutoFilterPros 
+- This is a open source project. 
+- Source - https://github.com/anjan-budige  
 
 <b>DEVS:</b>
-- <a href=https://t.me/M4u_links>Team M4U Links</a>"""
+- <a href=https://t.me/ml_contact_bot>Team Unique Coders X</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
+1. This Bot have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -47,7 +47,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/movie_search_hex_bot)</code>
+<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
