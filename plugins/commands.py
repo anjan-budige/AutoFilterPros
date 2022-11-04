@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Main Channel ⚡', url='https://t.me/moviesss4ers')
+                InlineKeyboardButton('Main Channel ⚡', url='https://t.me/')
             ],
             [
                 InlineKeyboardButton('Help ⚡', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,15 +42,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/Link_Reporter_Bot')
+            InlineKeyboardButton('Any Queries DM Here ✅', url='https://t.me/ml_contact_bot')
             ],[
-            InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers'),
-            InlineKeyboardButton('Group 👀', url='https://t.me/moviei43')
+            InlineKeyboardButton('Channel 🎉', url='https://t.me/m4u_links'),
+            InlineKeyboardButton('Group 🚀', url='https://t.me/m4u_links')
             ],[
             InlineKeyboardButton('Help ⚡', callback_data='help'),
-            InlineKeyboardButton('About Me 🙈', callback_data='about')
+            InlineKeyboardButton('About Me 💜', callback_data='about')
             ],[
-            InlineKeyboardButton('Any Queries DM Here ✅',url='https://t.me/Link_Reporter_Bot')
+            InlineKeyboardButton('Developer Channel ✅',url='https://t.me/unique_coders_x')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
