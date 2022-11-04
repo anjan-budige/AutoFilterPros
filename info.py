@@ -45,12 +45,12 @@ IMDB = True
 SINGLE_BUTTON = False
 CUSTOM_FILE_CAPTION = None
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = '<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10'
+IMDB_TEMPLATE = '<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10\n\n*💝 Developed BY <a href="https://github.com/anjan-budige/AutoFilterPros/">Altruist</a>*'
 LONG_IMDB_DESCRIPTION = False
 SPELL_CHECK_REPLY = True
 MAX_LIST_ELM = None
 INDEX_REQ_CHANNEL = "-1001767960284"
-FILE_STORE_CHANNEL = "-1001883208693"
+FILE_STORE_CHANNEL =  [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001883208693')).split()]
 MELCOW_NEW_USERS = True
 PROTECT_CONTENT = False
 PUBLIC_FILE_STORE = True
