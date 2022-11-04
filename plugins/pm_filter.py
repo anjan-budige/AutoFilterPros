@@ -580,8 +580,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Developer 😎', url='https://t.me/Nexus_Shubhu'),
-            InlineKeyboardButton('Source Code', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('Developer 😎', url='https://t.me/ml_contact_bot'),
+            InlineKeyboardButton('Source Code', url='https:/github.com/anjan-budige/AutoFilterPros')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('Ok Close it', callback_data='close_data')
