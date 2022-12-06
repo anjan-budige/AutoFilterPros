@@ -51,6 +51,7 @@ Read [this](https://telegram.dog/TeamEvamaria/12) before you start messing up wi
 
 ## Deploy
 You can deploy this bot anywhere.
+[![Deploy on Mogenius](https://telegra.ph/file/d824b54bf37a407b10fb4.jpg)](https://studio.mogenius.com/studio/cloud-space/add-cloud-space)
 
 <i>**[Watch Deploying Tutorial...](https://youtu.be/1G1XwEOnxxo)**</i>
 
