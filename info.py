@@ -38,7 +38,7 @@ DATABASE_NAME = "M4uVideo_bot"
 COLLECTION_NAME = 'Telegram_files'
 
 # Others
-LOG_CHANNEL = "-1001767960284"
+LOG_CHANNEL = "-1001313414450"
 SUPPORT_CHAT = "ml_contact_bot"
 P_TTI_SHOW_OFF = False
 IMDB = True
@@ -49,8 +49,8 @@ IMDB_TEMPLATE = '<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={u
 LONG_IMDB_DESCRIPTION = False
 SPELL_CHECK_REPLY = True
 MAX_LIST_ELM = None
-INDEX_REQ_CHANNEL = "-1001767960284"
-FILE_STORE_CHANNEL =  [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001883208693')).split()]
+INDEX_REQ_CHANNEL = "-1001313414450"
+FILE_STORE_CHANNEL =  [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001313414450')).split()]
 MELCOW_NEW_USERS = True
 PROTECT_CONTENT = False
 PUBLIC_FILE_STORE = True
