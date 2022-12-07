@@ -29,7 +29,7 @@ auth_users = None
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = "-1001539945987"
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = '-1001539945987'.split()
+AUTH_CHANNEL = "-1001539945987"
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
