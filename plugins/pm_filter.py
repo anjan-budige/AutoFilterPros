@@ -227,7 +227,7 @@ async def next_page(bot, query):
                                   callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("👉 How To Download 👈 ", url=f"hhttps://t.me/moviesss4ers/14")])
+            [InlineKeyboardButton("👉 How To Download 👈 ", url=f"hhttps://t.me/m4u_links")])
         btn.append(
             [InlineKeyboardButton('Ok Close it 🙂', callback_data='close_data')])
     elif off_set is None:
@@ -235,7 +235,7 @@ async def next_page(bot, query):
             [InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
-            [InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/moviesss4ers/14")])
+            [InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/m4u_links")])
         btn.append([InlineKeyboardButton('Ok Close it 🙂', callback_data='close_data')])
     else:
         btn.append(
@@ -245,7 +245,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
-        btn.append([InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/moviesss4ers/14")])
+        btn.append([InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/m4u_links")])
         btn.append([InlineKeyboardButton('Ok Close it 🙂', callback_data='close_data')])
     try:
         await query.edit_message_reply_markup(
@@ -275,7 +275,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase If You Want This Movie Join Our Channel https://t.me/moviesss4ers')
+            k = await query.message.edit('This Movie Not Found In DataBase If You Want This Movie Join Our Channel https://t.me/m4u_links')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -546,13 +546,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('Channel 👀', url='https://t.me/moviesss4ers'),
-            InlineKeyboardButton('Group 👀', url='https://t.me/moviei43')
+            InlineKeyboardButton('Channel 👀', url='https://t.me/m4u_links'),
+            InlineKeyboardButton('Group 👀', url='https://t.me/m4u_links')
         ], [
             InlineKeyboardButton('Help ⚡', callback_data='help'),
             InlineKeyboardButton('About Me 💥', callback_data='about')
         ], [
-            InlineKeyboardButton('Any Queries DM Here ✅',url='https://t.me/Link_Reporter_Bot')
+            InlineKeyboardButton('Any Queries DM Here ✅',url='https://t.me/ml_contact_bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -819,7 +819,7 @@ async def auto_filter(client, msg, spoll=False):
              )
 
     btn.append([
-                InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/moviesss4ers/14"),
+                InlineKeyboardButton("👉 How To Download 👈 ", url=f"https://t.me/m4u_links"),
             ])
     btn.append([InlineKeyboardButton('Ok Close it 🙂', callback_data='close_data')])     
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -892,7 +892,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name. If You Want Tis Movi e Request Us at - https://t.me/+BDvuprV0ctVkOTE1")
+        k = await msg.reply("I couldn't find any movie in that name. If You Want Tis Movi e Request Us at - https://t.me/ml_contact_bot")
         await asyncio.sleep(8)
         await k.delete()
         return
