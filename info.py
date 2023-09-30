@@ -33,7 +33,7 @@ AUTH_CHANNEL = "-1001539945987"
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = "mongodb+srv://enrich:enrich@cluster0.mhghl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_URI = "mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = "M4uVideo_bot"
 COLLECTION_NAME = 'Telegram_files'
 
